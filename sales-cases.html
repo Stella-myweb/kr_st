@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Jung - B2B SDR Case Studies</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #000;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        .case-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .case-tab.active {
+            background-color: #000;
+            color: #fff;
+        }
+        .case-tab:hover {
+            background-color: #f3f4f6;
+        }
+        .case-tab.active:hover {
+            background-color: #000;
+        }
+        .case-content {
+            display: none;
+        }
+        .case-content.active {
+            display: block;
+        }
+        .lang-section {
+            display: none;
+        }
+        .lang-section.active {
+            display: block;
+        }
+        .lang-toggle {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-toggle.active {
+            background-color: #000;
+            color: #fff;
+        }
+        .lang-toggle:hover {
+            background-color: #f3f4f6;
+        }
+        .lang-toggle.active:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="w-full py-6 bg-white shadow-sm">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <h1 class="text-3xl font-bold text-gray-800">Stella Jung</h1>
+                    <h2 class="text-xl text-black">Senior Sales Development Representative</h2>
+                </div>
+                <div class="w-full md:w-auto flex flex-col md:flex-row md:items-center">
+                    <a href="mailto:stella.cholong.jung@gmail.com" class="mb-2 md:mb-0 md:mr-4 text-gray-600 hover:text-gray-800 flex items-center">
+                        <i class="fas fa-envelope mr-2 text-gray-500"></i>
+                        stella.cholong.jung@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/stellacholongjung/" target="_blank" class="text-gray-600 hover:text-gray-800 flex items-center">
+                        <i class="fab fa-linkedin mr-2 text-gray-500"></i>
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="text-gray-600 hover:text-black flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                ← Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Language Toggle -->
+        <div class="flex justify-end mb-8">
+            <div class="flex border border-gray-300 rounded">
+                <button id="lang-ko" class="lang-toggle active px-4 py-2 border-r border-gray-300">한국어</button>
+                <button id="lang-en" class="lang-toggle px-4 py-2">English</button>
+            </div>
+        </div>
+
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h1 class="text-4xl font-bold mb-4">B2B SDR 영업 사례</h1>
+                <p class="text-xl text-gray-600">Brightcove에서 성사시킨 실제 기업 거래 사례</p>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h1 class="text-4xl font-bold mb-4">B2B SDR Case Studies</h1>
+                <p class="text-xl text-gray-600">Real enterprise deals closed at Brightcove</p>
+            </div>
+        </div>
+
+        <!-- Company & Role Introduction -->
+        <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Brightcove Company Info -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-xl font-bold mb-4">회사 소개: Brightcove</h3>
+                        <p class="text-gray-800 mb-4">
+                            Brightcove는 전 세계 네트워크 트래픽의 2%를 차지하는 글로벌 엔터프라이즈 비디오 플랫폼 리더입니다. Netflix, YouTube 다음으로 높은 네트워크 사용량을 기록하며, Fortune 500 기업들이 신뢰하는 비디오 솔루션을 제공합니다.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold">주요 고객사:</p>
+                            <p class="text-gray-700">Nike, H&M, BBC, 쿠팡플레이, 스포티비 등</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">핵심 서비스:</p>
+                            <p class="text-gray-700">Live Streaming, Video-on-Demand, Live Commerce, API 솔루션</p>
+                        </div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-xl font-bold mb-4">Company Overview: Brightcove</h3>
+                        <p class="text-gray-800 mb-4">
+                            Brightcove is a global enterprise video platform leader, accounting for 2% of worldwide network traffic. Recording the third-highest network usage after Netflix and YouTube, we provide trusted video solutions for Fortune 500 companies.
+                        </p>
+                        <div class="mb-4">
+                            <p class="font-semibold">Key Clients:</p>
+                            <p class="text-gray-700">Nike, H&M, BBC, Coupang Play, SPOTV, etc.</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Core Services:</p>
+                            <p class="text-gray-700">Live Streaming, Video-on-Demand, Live Commerce, API Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDR Role Description -->
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-xl font-bold mb-4">SDR 역할: Stella Jung</h3>
+                        <div class="mb-4">
+                            <p class="font-semibold">담당 업무:</p>
+                            <ul class="list-disc ml-5 text-gray-700">
+                                <li>신규 고객 발굴: 아웃바운드 영업을 통한 잠재 고객 발굴 및 초기 접촉</li>
+                                <li>니즈 분석: 고객의 비즈니스 요구사항과 기술적 needs 파악</li>
+                                <li>솔루션 매칭: 고객 상황에 맞는 Brightcove 솔루션 제안</li>
+                                <li>기회 창출: qualified lead를 세일즈팀으로 전환하여 계약 기회 극대화</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold">영업 목표:</p>
+                            <ul class="list-disc ml-5 text-gray-700">
+                                <li>단기: 기술적 적합성 검증 및 데모 미팅 성사</li>
+                                <li>중기: POC 진행 및 예산 확보</li>
+                                <li>장기: 장기 파트너십 구축을 통한 계정 확장</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-xl font-bold mb-4">SDR Role: Stella Jung</h3>
+                        <div class="mb-4">
+                            <p class="font-semibold">Key Responsibilities:</p>
+                            <ul class="list-disc ml-5 text-gray-700">
+                                <li>New Customer Acquisition: Prospecting and initial outreach through outbound sales</li>
+                                <li>Needs Analysis: Understanding customer business requirements and technical needs</li>
+                                <li>Solution Matching: Proposing appropriate Brightcove solutions for customer situations</li>
+                                <li>Opportunity Creation: Converting qualified leads to sales team for deal maximization</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Sales Objectives:</p>
+                            <ul class="list-disc ml-5 text-gray-700">
+                                <li>Short-term: Technical fit validation and demo meeting execution</li>
+                                <li>Mid-term: POC progression and budget securing</li>
+                                <li>Long-term: Long-term partnership building for account expansion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Tabs -->
+        <section class="mb-8">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">영업 사례</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">Sales Cases</h2>
+            </div>
+            
+            <div class="flex border-b border-gray-200 mb-8">
+                <button class="case-tab active px-6 py-3 border-b-2 border-transparent" data-case="caseA">A사</button>
+                <button class="case-tab px-6 py-3 border-b-2 border-transparent" data-case="caseB">B사</button>
+                <button class="case-tab px-6 py-3 border-b-2 border-transparent" data-case="caseC">C사</button>
+            </div>
+        </section>
+
+        <!-- Case Content Areas -->
+        <section>
+            <!-- Case A Content -->
+            <div id="caseA" class="case-content active">
+                <div class="lang-section active" data-lang="ko">
+                    <h3 class="text-2xl font-bold mb-4">A사: 애니메이션 스트리밍 플랫폼</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">사례 개요</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>대상:</strong> A사 개발팀 팀장 (애니메이션 스트리밍 플랫폼)</li>
+                            <li><strong>목적:</strong> 글로벌 확장을 위한 비디오 인프라 최적화 솔루션 제안</li>
+                            <li><strong>결과:</strong> 기술 미팅 진행 및 견적 검토 단계까지 진행 후 최종 계약 불발</li>
+                        </ul>
+                    </div>
+
+                    <div class="prose max-w-none">
+                        <h4 class="text-xl font-bold mb-4">대화록</h4>
+                        
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung (Brightcove):</strong> 안녕하세요, A사 팀장님 맞으실까요?</p>
+                        </div>
+                        
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 네, 안녕하세요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 안녕하세요, 저는 Brightcove의 Stella Jung 차장입니다. 먼저 이메일도 공유해주시고 빠른 회신 정말 감사합니다. 혹시 브라이트코브는 그전에 알고 계셨을까요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 이름을 몇 번 들어보긴 했는데 정확히 회사가 뭘 하는지는 모르고 있었고요. 저희 내부에서는 따로 들어본 바가 없는 것 같아요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 그럼 이름만 들어본 적이 있고 어떤 회사인지는 전혀 모르신다는 거군요. 현재 A사에서는 어떤 플랫폼을 사용하고 계시나요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 저희는 전부 다 AWS를 쓰고 있어요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 그러시군요. 그러면 자체적으로 플레이어는 개발하신 건가요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 아니요. 플레이어는 저희가 앱은 React Native를 쓰고 있거든요. DRM은 Pallycon을 쓰고 있고요. 저희가 영상 관련해서 전부 다 지금 CDN이랑 앞단에 포함되어 있는 서버까지 다 통합된 형태의 솔루션을 쓰고 있지는 않고요. 앞단에 딜리버리 관련된 서버들은 저희가 다 직접 구축했고, DRM은 외부 솔루션을 사용하고 있고, 플레이어는 각 플랫폼별로 다른 솔루션을 쓰고 있거든요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 이렇게 따로따로 하시면 개발하시거나 관리하시는 데 어렵지 않으세요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 저희가 어차피 React Native라서 어차피 그 부분은 큰 차이가 없어요. 불편한 점은 많이 있긴 한데, 저희가 또 개발 인력이 많은 회사가 아니거든요. 그러다 보니까 변경에 대해서는 조금 진행하기 어려운 부분들이 있어요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 그러면 저희 쪽과 차이점을 말씀드리면, 저희는 모든 게 통합되어 있는 솔루션이고 DRM 기능까지 포함되어 있습니다. 간략하게 설명드리면, Brightcove는 기업에 최적화된 비디오 전문 솔루션이에요. 네트워크 사용량으로 보면 Netflix, YouTube 다음으로 저희 회사가 많아서 전 세계 네트워크의 2% 정도를 사용하고 있습니다. 혹시 평소에 불편했던 기능이나 원하시는 기능이 있으실까요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 글쎄요. 제가 그렇게 크지는 않아서 딱히 생각나는 건 없을 것 같고요. 다만 저희가 미리 하나 말씀드릴 게, 저희가 되게 CDN 단가가 엄청나게 싸요. 제가 알기로는 일반 AWS 가격의 10% 수준으로 할인받는 걸로 알고 있거든요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 어떻게 그렇게 됐죠? 그러면 이미 CDN을 기본적으로 싸게 공급받고 계셔서 다른 플레이어들이 여러 개로 나눠져 있어도 불편한 점은 그다지 없으신가요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 저도 잘 모르겠어요. 단가는 되게 싸고 나머지 DRM 비용 나가는 부분들이 있고 하는데, 저도 인프라 쪽은 많이 몰라서 같이 참석하신 대표님께서 잘 말씀해주실 것 같고요. 대표님께서 기술적인 부분을 많이 알고 계세요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> TV 플랫폼까지! 지금 해외 서비스도 하고 계실까요?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 현재 최근에 동남아시아 런칭을 했고요. 동남아시아 쪽 관련해서 아마 도움을 요청드린 부분이 있을 수도 있을 것 같아요. 현재로서는 국가 타겟팅을 정확히 하지 않고, 저희가 지금 1차적으로는 가능성 테스트 단계이기 때문에 AVOD 형태로만 들어가 있거든요. 인도네시아, 말레이시아, 필리핀, 베트남, 태국, 싱가포르로 6개국을 대상으로 나가고 있어요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 전체적으로 들어봤을 때 CDN 비용 자체가 부담이시고 이미 AWS에서 좋은 비용을 받고 계시다고 말씀해주셨지만, 저희도 사실 전 세계 네트워크 트래픽의 2%를 사용하고 있어서 그 양은 YouTube와 Netflix 다음으로 많은 양이에요. 그래서 저희도 CDN을 대량으로 사와서 싼 단가로 제공할 수 있고요. 특히 지금 동남아 진출을 하셨을 때 저희 CDN 가격이 한국보다 해외에서 더 저렴합니다.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 최근에 저희가 좀 고민인 부분 한 가지 말씀드리면, 저희가 현재 동남아 현지에 파견 나가 있는 인력이 전혀 없어요. 그러다 보니까 동남아 현지 저희 서비스에 대한 모니터링에 대한 이슈가 좀 있거든요. 실제로 영상이 잘 재생되고 있는지 이슈가 없는지 이런 부분들을 저희가 VPN을 통해서만 모니터링할 수가 있잖아요.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 재생 에러가 있을 경우에 저희가 관리해주시는 분이 계실 경우 티켓을 발행해주시면 저희가 9시부터 6시까지는 한국 CS 엔지니어분이 계셔서 그걸 다 핸들링하시고, 그 시간 이외에는 글로벌 서비스로 들어가서 24시간 365일 그런 에러가 있을 때 확인하고 해결할 수 있게끔 저희가 하고 있습니다. 그래서 PPT로 준비해서 저희 기술이사님도 같이 가실 예정이거든요.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 네, 알겠습니다.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> 그러면 저희가 질문 리스트를 한국 쪽과 동남아 쪽 별도로 2개로 작성해서 보내드릴게요. 그거를 작성해주시고 회신해주시면 저희가 견적서를 작성해서 회의가 끝나고 나서 받으실 수 있게끔 준비하겠습니다. 바쁘신데 시간 내주셔서 감사합니다.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>A사 담당자:</strong> 감사합니다.</p>
+                        </div>
+
+                        <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold mb-4">세일즈 성과 분석</h4>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">주요 성공 요인</h5>
+                                <ul class="list-disc ml-5 text-sm">
+                                    <li>글로벌 확장 니즈 파악: 동남아 진출에 따른 인프라 최적화 요구사항 발굴</li>
+                                    <li>기술적 페인포인트 식별: 모니터링 부족, 데이터 분석 한계, 개발 리소스 부족</li>
+                                    <li>비용 최적화 어필: CDN 비용 절감 및 운영 효율성 강조</li>
+                                    <li>차별화 포인트 제시: 24시간 글로벌 지원, 통합 대시보드, API 제공</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="font-semibold mb-2">Next Steps</h5>
+                                <ul class="list-disc ml-5 text-sm">
+                                    <li>기술이사와의 상세 미팅 진행</li>
+                                    <li>CMCD/RUM 데이터 분석 기능 확인</li>
+                                    <li>한국/동남아 별도 견적서 작성</li>
+                                    <li>모니터링 솔루션 데모 준비</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lang-section" data-lang="en">
+                    <h3 class="text-2xl font-bold mb-4">Company A: Animation Streaming Platform</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">Case Overview</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>Target:</strong> Company A Development Team Manager (Animation Streaming Platform)</li>
+                            <li><strong>Objective:</strong> Video infrastructure optimization solution proposal for global expansion</li>
+                            <li><strong>Result:</strong> Technical meeting and quotation review completed, final contract not closed</li>
+                        </ul>
+                    </div>
+
+                    <div class="prose max-w-none">
+                        <h4 class="text-xl font-bold mb-4">Conversation Transcript</h4>
+                        
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung (Brightcove):</strong> Hello, are you the team manager from Company A?</p>
+                        </div>
+                        
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Yes, hello.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> Hello, I'm Stella Jung, Manager from Brightcove. Thank you for sharing your email and providing such a quick response. Were you familiar with Brightcove before?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> I've heard the name a few times, but I didn't know exactly what the company does. I don't think anyone internally has heard of it either.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> So you've only heard the name but don't know what kind of company it is. What platform is Company A currently using?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> We're using AWS for everything.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> I see. Did you develop the player internally?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> No. For the player, our app uses React Native. We use Pallycon for DRM. We don't use an integrated solution that includes CDN and front-end servers. We built all the delivery-related front-end servers ourselves, use external solutions for DRM, and use different solutions for players on each platform.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> Isn't it difficult to develop or manage when you have everything separate like this?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Since we're using React Native anyway, that part doesn't make much difference. There are many inconveniences, but we're not a company with many developers, so it's a bit difficult to proceed with changes.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> The difference with our approach is that we have an integrated solution with DRM functionality included. To briefly explain, Brightcove is a video solution optimized for enterprises. In terms of network usage, our company ranks third after Netflix and YouTube, using about 2% of global network traffic. Are there any features you've found inconvenient or would like to have?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Well, I don't think there's anything that comes to mind since we're not that big. However, I should mention upfront that our CDN pricing is extremely cheap. I understand we get about a 90% discount from regular AWS prices.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> How did that happen? So since you're getting CDN at such a low cost, there aren't really any inconveniences even with multiple separate players?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> I'm not sure either. The pricing is very cheap, and there are DRM costs, but I don't know much about infrastructure, so our CEO who's joining the meeting would be able to explain better. The CEO knows a lot about the technical aspects.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> TV platform too! Are you also doing overseas services now?</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> We recently launched in Southeast Asia. There might be areas where we could use help with Southeast Asia. Currently, we're not targeting specific countries precisely. Since we're in the first phase of testing possibilities, we're only operating in AVOD format. We're targeting 6 countries: Indonesia, Malaysia, Philippines, Vietnam, Thailand, and Singapore.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> Overall, I understand that CDN costs are a burden, and while you mentioned getting good rates from AWS, we actually handle 2% of global network traffic, which is the third-highest amount after YouTube and Netflix. So we also purchase CDN in large volumes and can offer competitive pricing. Especially with your Southeast Asia expansion, our CDN pricing is more affordable overseas than in Korea.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Let me mention one concern we currently have. We have no personnel stationed locally in Southeast Asia. This creates monitoring issues for our service in Southeast Asia. We can only monitor whether videos are playing properly and if there are any issues through VPN.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> When there are playback errors, if you have someone managing it, you can issue tickets and we have Korean CS engineers from 9 AM to 6 PM who handle everything. Outside those hours, it goes to global service for 24/7/365 support to check and resolve such errors. We'll prepare a PPT presentation with our technical director joining the meeting.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Yes, understood.</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded border-l-4 border-blue-500 mb-4">
+                            <p><strong>Stella Jung:</strong> We'll prepare separate questionnaire lists for Korea and Southeast Asia and send them to you. Once you complete and return them, we'll prepare a quotation that you can receive after the meeting. Thank you for taking time from your busy schedule.</p>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded border-l-4 border-gray-400 mb-4">
+                            <p><strong>Company A Contact:</strong> Thank you.</p>
+                        </div>
+
+                        <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-bold mb-4">Sales Performance Analysis</h4>
+                            
+                            <div class="mb-4">
+                                <h5 class="font-semibold mb-2">Key Success Factors</h5>
+                                <ul class="list-disc ml-5 text-sm">
+                                    <li>Global expansion needs identification: Discovered infrastructure optimization requirements for Southeast Asia expansion</li>
+                                    <li>Technical pain point identification: Monitoring deficiencies, data analysis limitations, development resource constraints</li>
+                                    <li>Cost optimization appeal: Emphasized CDN cost reduction and operational efficiency</li>
+                                    <li>Differentiation points: 24/7 global support, integrated dashboard, API provision</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="font-semibold mb-2">Next Steps</h5>
+                                <ul class="list-disc ml-5 text-sm">
+                                    <li>Detailed meeting with technical director</li>
+                                    <li>CMCD/RUM data analysis functionality confirmation</li>
+                                    <li>Separate quotations for Korea/Southeast Asia</li>
+                                    <li>Monitoring solution demo preparation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case B Content -->
+            <div id="caseB" class="case-content">
+                <div class="lang-section active" data-lang="ko">
+                    <h3 class="text-2xl font-bold mb-4">B사: K-POP 팬덤 플랫폼</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">사례 개요</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>대상:</strong> B사 운영총괄 이사</li>
+                            <li><strong>목적:</strong> Live Streaming 기능 구축을 위한 통합 비디오 솔루션 제안</li>
+                            <li><strong>결과:</strong> 라이브 스트리밍 솔루션 검토 및 개발팀 미팅 진행 후 계약 성공</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600">상세 대화록이 여기에 표시됩니다...</p>
+                </div>
+                <div class="lang-section" data-lang="en">
+                    <h3 class="text-2xl font-bold mb-4">Company B: K-POP Fandom Platform</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">Case Overview</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>Target:</strong> Company B Chief Operating Officer</li>
+                            <li><strong>Objective:</strong> Integrated video solution proposal for live streaming feature development</li>
+                            <li><strong>Result:</strong> Live streaming solution review and development team meeting, contract successfully closed</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600">Detailed conversation transcript will be displayed here...</p>
+                </div>
+            </div>
+
+            <!-- Case C Content -->
+            <div id="caseC" class="case-content">
+                <div class="lang-section active" data-lang="ko">
+                    <h3 class="text-2xl font-bold mb-4">C사: 반려동물 서비스 플랫폼</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">사례 개요</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>대상:</strong> C사 IT팀 선임 담당자</li>
+                            <li><strong>목적:</strong> Live Commerce 솔루션 도입을 위한 초기 상담</li>
+                            <li><strong>결과:</strong> 최종 계약 검토 단계까지 진행 (95% 성공률)</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600">상세 대화록이 여기에 표시됩니다...</p>
+                </div>
+                <div class="lang-section" data-lang="en">
+                    <h3 class="text-2xl font-bold mb-4">Company C: Pet Care Service Platform</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <h4 class="font-bold mb-2">Case Overview</h4>
+                        <ul class="list-disc ml-5">
+                            <li><strong>Target:</strong> Company C IT Team Senior Associate</li>
+                            <li><strong>Objective:</strong> Initial consultation for Live Commerce solution implementation</li>
+                            <li><strong>Result:</strong> Progressed to final contract review stage (95% success rate)</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600">Detailed conversation transcript will be displayed here...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2025 Stella Jung. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Toggle Functionality
+        const langButtons = document.querySelectorAll('.lang-toggle');
+        const langSections = document.querySelectorAll('.lang-section');
+        
+        function switchLanguage(targetLang) {
+            // Update button states
+            langButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang-${targetLang}`).classList.add('active');
+            
+            // Update content visibility
+            langSections.forEach(section => {
+                if (section.getAttribute('data-lang') === targetLang) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+        
+        // Language button event listeners
+        document.getElementById('lang-ko').addEventListener('click', () => switchLanguage('ko'));
+        document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+        
+        // Case Tab Functionality
+        const caseTabs = document.querySelectorAll('.case-tab');
+        const caseContents = document.querySelectorAll('.case-content');
+        
+        function switchCase(targetCase) {
+            // Update tab states
+            caseTabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update content visibility
+            caseContents.forEach(content => {
+                if (content.id === targetCase) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+        
+        // Case tab event listeners
+        caseTabs.forEach(tab => {
+            tab.addEventListener('click', (event) => {
+                const targetCase = event.target.getAttribute('data-case');
+                switchCase(targetCase);
+            });
+        });
+    </script>
+</body>
+</html>
