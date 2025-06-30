@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stella Jung - Performance Summary</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #000;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        .lang-section {
+            display: none;
+        }
+        .lang-section.active {
+            display: block;
+        }
+        .lang-toggle {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-toggle.active {
+            background-color: #000;
+            color: #fff;
+        }
+        .lang-toggle:hover {
+            background-color: #f3f4f6;
+        }
+        .lang-toggle.active:hover {
+            background-color: #000;
+        }
+        .metric-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .achievement-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 4px;
+        }
+        .highlight-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="w-full py-6 bg-white shadow-sm">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-auto mb-4 md:mb-0">
+                    <h1 class="text-3xl font-bold text-gray-800">Stella Jung</h1>
+                    <h2 class="text-xl text-black">Senior Sales Development Representative</h2>
+                </div>
+                <div class="w-full md:w-auto flex flex-col md:flex-row md:items-center">
+                    <a href="mailto:stella.cholong.jung@gmail.com" class="mb-2 md:mb-0 md:mr-4 text-gray-600 hover:text-gray-800 flex items-center">
+                        <i class="fas fa-envelope mr-2 text-gray-500"></i>
+                        stella.cholong.jung@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/stellacholongjung/" target="_blank" class="text-gray-600 hover:text-gray-800 flex items-center">
+                        <i class="fab fa-linkedin mr-2 text-gray-500"></i>
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="mb-8">
+            <a href="index.html" class="text-gray-600 hover:text-black flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                ← Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Language Toggle -->
+        <div class="flex justify-end mb-8">
+            <div class="flex border border-gray-300 rounded">
+                <button id="lang-ko" class="lang-toggle active px-4 py-2 border-r border-gray-300">한국어</button>
+                <button id="lang-en" class="lang-toggle px-4 py-2">English</button>
+            </div>
+        </div>
+
+        <!-- Page Title -->
+        <div class="text-center mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h1 class="text-4xl font-bold mb-4">2024 Brightcove 성과 요약</h1>
+                <p class="text-xl text-gray-600">B2B SDR로서 달성한 주요 성과와 지표</p>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h1 class="text-4xl font-bold mb-4">2024 Brightcove Performance Summary</h1>
+                <p class="text-xl text-gray-600">Key achievements and metrics as B2B SDR</p>
+            </div>
+        </div>
+
+        <!-- Awards Section -->
+        <section class="mb-12">
+            <div class="text-center mb-8">
+                <div class="lang-section active" data-lang="ko">
+                    <h2 class="text-3xl font-bold mb-4">🏆 글로벌 수준 어워드</h2>
+                </div>
+                <div class="lang-section" data-lang="en">
+                    <h2 class="text-3xl font-bold mb-4">🏆 Global-Level Awards</h2>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="metric-card bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-4xl font-bold mb-2">2년</div>
+                        <div class="text-lg">연속 글로벌 탑 SDR</div>
+                        <div class="text-sm opacity-90 mt-2">2023-2024</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-4xl font-bold mb-2">2 Years</div>
+                        <div class="text-lg">Consecutive Global Top SDR</div>
+                        <div class="text-sm opacity-90 mt-2">2023-2024</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-gradient-to-br from-purple-500 to-pink-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-4xl font-bold mb-2">#1</div>
+                        <div class="text-lg">전 세계 SDR 중</div>
+                        <div class="text-sm opacity-90 mt-2">World Wide</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-4xl font-bold mb-2">#1</div>
+                        <div class="text-lg">Among All SDRs Worldwide</div>
+                        <div class="text-sm opacity-90 mt-2">Global Ranking</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-gradient-to-br from-blue-500 to-teal-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-4xl font-bold mb-2">APAC</div>
+                        <div class="text-lg">아시아 태평양 지역</div>
+                        <div class="text-sm opacity-90 mt-2">최고 성과자</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-4xl font-bold mb-2">APAC</div>
+                        <div class="text-lg">Asia Pacific Region</div>
+                        <div class="text-sm opacity-90 mt-2">Top Performer</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Revenue Performance -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">💰 매출 성과</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">💰 Revenue Performance</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="metric-card bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold highlight-number mb-2">$131,110</div>
+                        <div class="text-gray-600">총 계약 금액</div>
+                        <div class="text-sm text-gray-500 mt-1">(약 1억 8천만원)</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold highlight-number mb-2">$131,110</div>
+                        <div class="text-gray-600">Total Contract Value</div>
+                        <div class="text-sm text-gray-500 mt-1">(approx. 180M KRW)</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold highlight-number mb-2">$21,852</div>
+                        <div class="text-gray-600">평균 계약 규모</div>
+                        <div class="text-sm text-gray-500 mt-1">(약 2,900만원)</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold highlight-number mb-2">$21,852</div>
+                        <div class="text-gray-600">Average Deal Size</div>
+                        <div class="text-sm text-gray-500 mt-1">(approx. 29M KRW)</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold highlight-number mb-2">6건</div>
+                        <div class="text-gray-600">성공 계약 건수</div>
+                        <div class="text-sm text-gray-500 mt-1">2024년 기준</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold highlight-number mb-2">6 Deals</div>
+                        <div class="text-gray-600">Successful Contracts</div>
+                        <div class="text-sm text-gray-500 mt-1">2024 Based</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversion Rates -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">📈 전환율 성과</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">📈 Conversion Rate Performance</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="metric-card bg-gradient-to-br from-green-400 to-blue-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold mb-2">25%</div>
+                        <div class="text-lg mb-1">인바운드 전환율</div>
+                        <div class="text-sm opacity-90">업계 평균 5-8%의 3-5배</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold mb-2">25%</div>
+                        <div class="text-lg mb-1">Inbound Conversion</div>
+                        <div class="text-sm opacity-90">3-5x industry average</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-gradient-to-br from-purple-400 to-pink-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold mb-2">3.8%</div>
+                        <div class="text-lg mb-1">아웃바운드 전환율</div>
+                        <div class="text-sm opacity-90">업계 평균 1-2%의 2-4배</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold mb-2">3.8%</div>
+                        <div class="text-lg mb-1">Outbound Conversion</div>
+                        <div class="text-sm opacity-90">2-4x industry average</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-gradient-to-br from-orange-400 to-red-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold mb-2">8.8%</div>
+                        <div class="text-lg mb-1">전체 리드 전환율</div>
+                        <div class="text-sm opacity-90">68건 중 6건 성공</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold mb-2">8.8%</div>
+                        <div class="text-lg mb-1">Overall Lead Conversion</div>
+                        <div class="text-sm opacity-90">6 wins out of 68 leads</div>
+                    </div>
+                </div>
+                
+                <div class="metric-card bg-gradient-to-br from-teal-400 to-blue-500 text-white p-6 rounded-lg text-center">
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-3xl font-bold mb-2">76.4%</div>
+                        <div class="text-lg mb-1">MQL 품질율</div>
+                        <div class="text-sm opacity-90">업계 평균 40%의 2배</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-3xl font-bold mb-2">76.4%</div>
+                        <div class="text-lg mb-1">MQL Quality Rate</div>
+                        <div class="text-sm opacity-90">2x industry average</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Comparison -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">🎯 업계 비교 우위</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">🎯 Industry Competitive Advantage</h2>
+            </div>
+            
+            <div class="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                <div class="lang-section active" data-lang="ko">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">지표</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Stella 성과</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">업계 평균</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">우위 배수</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">인바운드 전환율</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">25%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">5-8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">3-5배</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">아웃바운드 전환율</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-purple-600 font-semibold">3.8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">1-2%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2-4배</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">MQL 품질율</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-blue-600 font-semibold">76.4%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">40%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2배</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">전체 리드 전환율</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-orange-600 font-semibold">8.8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">3-5%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2-3배</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="lang-section" data-lang="en">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Metric</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Stella's Performance</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Industry Average</th>
+                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Advantage Multiple</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Inbound Conversion Rate</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-green-600 font-semibold">25%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">5-8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">3-5x</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Outbound Conversion Rate</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-purple-600 font-semibold">3.8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">1-2%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2-4x</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">MQL Quality Rate</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-blue-600 font-semibold">76.4%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">40%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2x</span></td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-900">Overall Lead Conversion</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-orange-600 font-semibold">8.8%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-gray-500">3-5%</td>
+                                <td class="px-6 py-4 whitespace-nowrap"><span class="achievement-badge">2-3x</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Development -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">🚀 시장 개발 능력</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">🚀 Market Development Capabilities</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">제로투원 경험</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• 마케팅 지원 없이 신규 시장 개척</li>
+                            <li>• 오프라인 네트워킹으로 온라인 한계 극복</li>
+                            <li>• 한국 특화 전략 개발 및 실행</li>
+                        </ul>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Data-Driven Approach</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• <strong>Korea Market Analysis:</strong> 5x higher video consumption vs global average</li>
+                            <li>• <strong>Customer Needs Discovery:</strong> Uncovered hidden requirements</li>
+                            <li>• <strong>Competitive Analysis:</strong> Market trends and churn factor analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Innovation -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">⚡ 프로세스 혁신</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">⚡ Process Innovation</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-8 rounded-lg">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-2xl font-bold mb-4">75%</h3>
+                        <p class="text-lg mb-2">세일즈 사이클 단축</p>
+                        <p class="text-sm opacity-90">3-4주 → 1주일</p>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-2xl font-bold mb-4">75%</h3>
+                        <p class="text-lg mb-2">Sales Cycle Reduction</p>
+                        <p class="text-sm opacity-90">3-4 weeks → 1 week</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-500 to-teal-600 text-white p-8 rounded-lg">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-2xl font-bold mb-4">7개</h3>
+                        <p class="text-lg mb-2">주요 전시회 참여</p>
+                        <p class="text-sm opacity-90">평균 15+ 미팅 확보</p>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-2xl font-bold mb-4">7 Events</h3>
+                        <p class="text-lg mb-2">Major Exhibition Participation</p>
+                        <p class="text-sm opacity-90">Average 15+ meetings secured</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zero Budget Achievement -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-red-500 to-pink-500 text-white p-8 rounded-lg text-center">
+                <div class="lang-section active" data-lang="ko">
+                    <h2 class="text-3xl font-bold mb-4">🎯 제로 예산 성과</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <div class="text-2xl font-bold">0원</div>
+                            <div>마케팅 예산</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">0-1개</div>
+                            <div>월 인바운드 리드</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">52건</div>
+                            <div>아웃바운드 기회 창출</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lang-section" data-lang="en">
+                    <h2 class="text-3xl font-bold mb-4">🎯 Zero-Budget Achievement</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                        <div>
+                            <div class="text-2xl font-bold">$0</div>
+                            <div>Marketing Budget</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">0-1</div>
+                            <div>Monthly Inbound Leads</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold">52</div>
+                            <div>Outbound Opportunities Created</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Volume -->
+        <section class="mb-12">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-2xl font-bold mb-6">📊 영업 활동량</h2>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-2xl font-bold mb-6">📊 Sales Activity Volume</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                    <div class="text-2xl font-bold highlight-number">68건</div>
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-sm text-gray-600">총 처리 리드</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-sm text-gray-600">Total Leads Processed</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                    <div class="text-2xl font-bold highlight-number">52건</div>
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-sm text-gray-600">아웃바운드 개발</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-sm text-gray-600">Outbound Development</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                    <div class="text-2xl font-bold highlight-number">16건</div>
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-sm text-gray-600">인바운드 리드</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-sm text-gray-600">Inbound Leads</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg border border-gray-200 text-center">
+                    <div class="text-2xl font-bold highlight-number">76%</div>
+                    <div class="lang-section active" data-lang="ko">
+                        <div class="text-sm text-gray-600">아웃바운드 비중</div>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <div class="text-sm text-gray-600">Outbound Ratio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center py-12 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg">
+            <div class="lang-section active" data-lang="ko">
+                <h2 class="text-3xl font-bold mb-4">검증된 성과, 입증된 능력</h2>
+                <p class="text-xl mb-6">제한된 환경에서도 업계 최고 수준의 성과를 내며,<br>글로벌 스탠다드를 한국에서 구현한 검증된 세일즈 전문가</p>
+                <a href="sales-cases.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    실제 영업 사례 보기 →
+                </a>
+            </div>
+            <div class="lang-section" data-lang="en">
+                <h2 class="text-3xl font-bold mb-4">Proven Performance, Verified Capabilities</h2>
+                <p class="text-xl mb-6">Achieving industry-leading results even in constrained environments,<br>A verified sales professional who implemented global standards in Korea</p>
+                <a href="sales-cases.html" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    View Real Sales Cases →
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-white text-center">
+        <div class="max-w-5xl mx-auto px-4">
+            <p>© 2025 Stella Jung. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Language Toggle Functionality
+        const langButtons = document.querySelectorAll('.lang-toggle');
+        const langSections = document.querySelectorAll('.lang-section');
+        
+        function switchLanguage(targetLang) {
+            // Update button states
+            langButtons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang-${targetLang}`).classList.add('active');
+            
+            // Update content visibility
+            langSections.forEach(section => {
+                if (section.getAttribute('data-lang') === targetLang) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+        
+        // Language button event listeners
+        document.getElementById('lang-ko').addEventListener('click', () => switchLanguage('ko'));
+        document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+        
+        // Add smooth scroll animation to metric cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = Math.random() * 0.3 + 's';
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.metric-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</body>
+</html>d mb-4 text-gray-800">Zero-to-One Experience</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Pioneered new market without marketing support</li>
+                            <li>• Overcame online limitations through offline networking</li>
+                            <li>• Developed and executed Korea-specific strategies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">업종별 성과</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• <strong>미디어 업계:</strong> 43건 기회 관리</li>
+                            <li>• <strong>기업 시장:</strong> 23건 기회 관리</li>
+                            <li>• <strong>신규 분야:</strong> 스포츠팀, 교육 기관 등</li>
+                        </ul>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Industry-Specific Performance</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• <strong>Media Industry:</strong> 43 opportunities managed</li>
+                            <li>• <strong>Enterprise Market:</strong> 23 opportunities managed</li>
+                            <li>• <strong>New Verticals:</strong> Sports teams, educational institutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <div class="lang-section active" data-lang="ko">
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">데이터 기반 접근</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• <strong>한국 시장 분석:</strong> 글로벌 대비 5배 높은 비디오 소비량</li>
+                            <li>• <strong>고객 니즈 발굴:</strong> 숨겨진 요구사항 발견</li>
+                            <li>• <strong>경쟁사 분석:</strong> 시장 동향 및 이탈 요인 분석</li>
+                        </ul>
+                    </div>
+                    <div class="lang-section" data-lang="en">
+                        <h3 class="text-xl font-bol
